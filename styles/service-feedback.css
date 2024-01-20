@@ -1,0 +1,11 @@
+.customer-survey {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid black; 
+}
+
+.survey-text {
+    margin: 0 0 20px 0;
+}
