@@ -1,0 +1,51 @@
+.profile-user-row {
+    margin: 20px;
+}
+
+.profile-user {
+    margin: 10px;
+    box-shadow: 0 0 5px 1px rgba(67, 67, 67, 0.5);
+    display: inline-block;
+
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center
+}
+
+.profile-user-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 10px 10px;
+}
+
+.profile-friends {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: gray;
+    margin: 0 0 15px 10px;
+}
+
+.profile-add-btn {
+    background-color: rgb(49, 119, 239);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0px 0 10px 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.profile-add-btn:hover {
+    background-color: rgb(75, 127, 216);
+}
+
+.profile-add-btn:active {
+    background-color: rgb(48, 113, 227);
+}
