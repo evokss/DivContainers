@@ -1,46 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f7f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
 .tweet-composer {
-    margin: 40px 40px;
-    padding: 1px;
-    box-shadow: 0 0 5px 1px rgba(96, 95, 95, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 16px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
 }
 
 .avatar-image {
-    height: 60px;
-    width: 60px;
-    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
     object-fit: cover;
-    object-position: center;
-    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.tweet-content {
+    flex-grow: 1;
 }
 
 .tweet-input {
-    font-size: 20px;
+    width: 100%;
+    min-height: 80px;
+    font-size: 18px;
     border: none;
-    margin-left: 10px;
-    vertical-align: middle;
+    resize: none;
+    margin-bottom: 12px;
+    font-family: inherit;
 }
 
-.tweet-submit-btn{
-    padding: 10px 20px;
-    font-size: 18px;
+.tweet-input::placeholder {
+    color: #536471;
+}
+
+.tweet-input:focus {
+    outline: none;
+}
+
+.tweet-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tweet-icons {
+    display: flex;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin-right: 16px;
+    cursor: pointer;
+    color: #1da1f2;
+}
+
+.tweet-submit-btn {
+    padding: 8px 16px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
-    background-color: rgb(59, 118, 219);
+    background-color: #1da1f2;
     border: none;
-    border-radius: 20px;
-    margin: 0 15px 0 160px;
-    vertical-align: middle;
+    border-radius: 9999px;
     cursor: pointer;
-    transition: 0.2s;
+    transition: background-color 0.2s ease;
 }
 
 .tweet-submit-btn:hover {
-    background-color: rgb(75, 127, 216);
+    background-color: #1a91da;
 }
 
 .tweet-submit-btn:active {
-    background-color: rgb(48, 113, 227);
+    background-color: #177fbf;
+}
+
+@media (max-width: 480px) {
+    .tweet-composer {
+        padding: 12px;
+    }
+
+    .avatar-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tweet-input {
+        font-size: 16px;
+    }
+
+    .icon-btn {
+        font-size: 18px;
+        margin-right: 12px;
+    }
+
+    .tweet-submit-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
 }
