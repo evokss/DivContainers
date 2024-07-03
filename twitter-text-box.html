@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Twitter: What's new?</title>
-    <link rel="stylesheet" href="styles/twitter-text-box.css" />
-  </head>
-  <body>
-    <div class="tweet-composer">
-      <img class="avatar-image" src="images/kitty.jpg" alt="avatar" />
-      <input class="tweet-input" type="text" placeholder="What's happenning?" />
-      <button class="tweet-submit-btn">Tweet</button>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Twitter: What's happening?</title>
+        <link rel="stylesheet" href="styles/twitter-text-box.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="tweet-composer">
+            <img class="avatar-image" src="images/kitty.jpg" alt="User avatar" />
+            <div class="tweet-content">
+                <textarea class="tweet-input" placeholder="What's happening?"></textarea>
+                <div class="tweet-actions">
+                    <div class="tweet-icons">
+                        <button class="icon-btn">📷</button>
+                        <button class="icon-btn">📊</button>
+                        <button class="icon-btn">😊</button>
+                        <button class="icon-btn">📍</button>
+                    </div>
+                    <button class="tweet-submit-btn">Tweet</button>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
