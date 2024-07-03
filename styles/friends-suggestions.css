@@ -1,67 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
 .profile-user-row {
-    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .profile-user {
-    margin: 10px;
-    box-shadow: 0 0 5px 1px rgba(67, 67, 67, 0.5);
-    display: inline-block;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
 
+.profile-user:hover {
+    transform: translateY(-5px);
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
-    object-position: center
+    object-position: center;
 }
 
-.mutural-friends-row {
-    margin: 0 0 10px 10px ;
+.profile-info {
+    padding: 15px;
 }
 
-.photo-mutural-friend {
+.profile-user-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mutual-friends-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.photo-mutual-friend {
     width: 28px;
     height: 28px;
     object-fit: cover;
     object-position: center;
-    border-radius: 14px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.profile-user-name {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 10px 10px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .profile-friends {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: gray;
-    margin: 0 0 0 5px;
-    display: inline-block;
-    vertical-align: middle;
+    font-size: 14px;
+    color: #65676B;
 }
 
 .profile-add-btn {
-    background-color: rgb(49, 119, 239);
+    background-color: #1877F2;
     color: white;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: bold;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 0px 0 10px 10px;
+    border-radius: 6px;
+    padding: 8px 12px;
+    width: 100%;
     cursor: pointer;
-    transition: 0.2s;
+    transition: background-color 0.3s ease;
 }
 
 .profile-add-btn:hover {
-    background-color: rgb(75, 127, 216);
+    background-color: #166FE5;
 }
 
 .profile-add-btn:active {
-    background-color: rgb(48, 113, 227);
+    background-color: #1464D1;
+}
+
+@media (max-width: 768px) {
+    .profile-user {
+        width: 100%;
+    }
 }
